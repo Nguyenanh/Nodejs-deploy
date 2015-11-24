@@ -17,13 +17,12 @@ role :db,  ["#{user}@#{ip_address}"]
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server ip_address, user: user, roles: %w{web app}, my_property: :my_value, port: 9000
+server ip_address, user: user, roles: %w{web app}, my_property: :my_value
 set :rails_env, 'production'
 set :bundle_flags, "--no-deployment"
 set :ssh_options, {
   keys: %w(~/.ssh/ims/ims.pem),
-  forward_agent: true,
-  port: 9000
+  forward_agent: true
 }
 
 # Extended Server Syntax
