@@ -1,0 +1,81 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/home/anhn/Project-Nodejs/Nodejs-deploy',
+6 verbose install   [ 'express', 'jade' ] ]
+7 info preinstall application-name@0.0.1
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'express@4.3.12', null ]
+10 verbose cache add name=undefined spec="express@4.3.12" args=["express@4.3.12",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'express@4.3.12',
+11 verbose parsed url   path: 'express@4.3.12',
+11 verbose parsed url   href: 'express@4.3.12' }
+12 verbose already installed skipping jade@1.11.0 /home/anhn/Project-Nodejs/Nodejs-deploy
+13 verbose cache add name="express" spec="4.3.12" args=["express","4.3.12"]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: '4.3.12',
+14 verbose parsed url   path: '4.3.12',
+14 verbose parsed url   href: '4.3.12' }
+15 verbose addNamed [ 'express', '4.3.12' ]
+16 verbose addNamed [ '4.3.12', '4.3.12' ]
+17 silly lockFile 83498106-express-4-3-12 express@4.3.12
+18 verbose lock express@4.3.12 /home/anhn/.npm/83498106-express-4-3-12.lock
+19 verbose request where is /express
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id 2d1d5ce4ceb6969b
+22 verbose url raw /express
+23 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+24 verbose url resolved https://registry.npmjs.org/express
+25 verbose request where is https://registry.npmjs.org/express
+26 info trying registry request attempt 1 at 14:02:17
+27 verbose etag "BFCABD7DYC4DMCU91JCMJ9Z59"
+28 http GET https://registry.npmjs.org/express
+29 http 304 https://registry.npmjs.org/express
+30 silly registry.get cb [ 304,
+30 silly registry.get   { date: 'Tue, 24 Nov 2015 07:02:51 GMT',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     'cache-control': 'max-age=60',
+30 silly registry.get     etag: '"BFCABD7DYC4DMCU91JCMJ9Z59"',
+30 silly registry.get     age: '0',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'x-served-by': 'cache-hkg6820-HKG',
+30 silly registry.get     'x-cache': 'HIT',
+30 silly registry.get     'x-cache-hits': '1',
+30 silly registry.get     'x-timer': 'S1448348571.119542,VS0,VE196',
+30 silly registry.get     vary: 'Accept' } ]
+31 verbose etag https://registry.npmjs.org/express from cache
+32 silly lockFile 83498106-express-4-3-12 express@4.3.12
+33 silly lockFile 83498106-express-4-3-12 express@4.3.12
+34 error Error: version not found: express@4.3.12
+34 error     at /usr/lib/node_modules/npm/lib/cache/add-named.js:125:12
+34 error     at saved (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+34 error     at Object.oncomplete (fs.js:108:15)
+35 error If you need help, you may report this *entire* log,
+35 error including the npm and node versions, at:
+35 error     <http://github.com/npm/npm/issues>
+36 error System Linux 3.16.0-53-generic
+37 error command "/usr/bin/node" "/usr/bin/npm" "install"
+38 error cwd /home/anhn/Project-Nodejs/Nodejs-deploy
+39 error node -v v0.10.37
+40 error npm -v 1.4.28
+41 verbose exit [ 1, true ]
