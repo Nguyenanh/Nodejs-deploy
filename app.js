@@ -6,7 +6,7 @@ var path = require('path');
 // var bodyParser = require('body-parser');
 // var session = require('express-session');
 
-var routes = require('./routes/index');
+// var routes = require('./routes/index');
 
 var app = express();
 var server = require('http').createServer(app);
@@ -19,39 +19,11 @@ app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
 // app.use(express.favicon(__dirname + '/public/images/favicon.ico')); 
 app.set('port', process.env.PORT || 9000);
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.code = 404;
-  res.send(err);
+// app.use('/', routes);
+app.get('/',function(req, res) {
+  res.send("OKE  MEN AAAA");
 });
-
-// error handlers
-
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
-  });
-}
-
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
-});
-
-server.listen(app.get("port"), function () {
+server.listen(app.get('port'), function (req, res) {
   console.log('Server listening at port %d', app.get("port"));
 });
 
